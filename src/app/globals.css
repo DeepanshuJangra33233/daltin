@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.ff_raleway {
+  font-family: "Raleway", serif;
+}
+.ff_poppins {
+  font-family: "Poppins", serif;
 }
 
 @layer base {
@@ -69,4 +77,44 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* common css */
+
+.bg_gradientButton {
+  background: linear-gradient(93.35deg, #eb9757 0.63%, #eb57e3 103.13%);
+  box-shadow: 0px 10px 20px 0px #eb975740;
+  box-shadow: 3px 1px 15px 0px #ffffff80 inset;
+  box-shadow: 0px -3px 10px 0px #0000005e inset;
+  border: 2px solid;
+  transition: 0.3s ease all;
+}
+
+.bg_gradientButton:hover {
+  background: transparent;
+  color: #3777ff;
+  box-shadow: none;
+}
+.navbar_shadow {
+  box-shadow: 0px 12px 16px 2px #5b57eb26;
+}
+
+.ai_label {
+  background: linear-gradient(90deg, #eb5adc 0%, #eb9757 100%);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 4px 12px 0px #00000040;
+}
+.card_parent {
+  border-radius: 28px;
+  position: relative;
+}
+.card_parent:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 5px;
+  background: linear-gradient(193.06deg, #5e57eb 5.96%, #eb57e3 98.77%);
+  border-radius: inherit;
+  mask: conic-gradient(#000 0 0) content-box exclude, conic-gradient(#000 0 0);
 }
