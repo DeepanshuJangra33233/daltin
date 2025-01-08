@@ -1,23 +1,21 @@
 "use client";
 import About from "@/components/About";
 import NavBar from "@/components/common/NavBar";
-import Login from "@/components/Login";
+import Preloader from "@/components/common/Preloader";
 import OurMission from "@/components/OurMission";
 import OurPartners from "@/components/OurPartners";
 import OurStory from "@/components/OurStory";
 import OurUPS from "@/components/OurUPS";
 import ProgressBar from "@/components/ProgressBar";
-import Register from "@/components/Register";
-import SplashScreen from "@/components/SplashScreen";
-import StudentVerifyPortal from "@/components/StudentVerifyPortal";
-import StudentWelcomePortal from "@/components/StudentWelcomePortal";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+  const router = useRouter();
   const bodyContainer = useRef(null);
   const imageRef = useRef(null);
   const aboutRef = useRef(null);
@@ -124,22 +122,16 @@ export default function Home() {
   }, []);
   return (
     <div className="overflow-x-hidden">
-      <div
-        className="bg-[url('/assets/images/about_page_bg.webp')] bg-cover bg-center min-h-[1000vh] pt-[73px]"
-        ref={bodyContainer}
-      >
+      <div className="bg-[url('/assets/images/about_page_bg.webp')] bg-cover bg-center fixed top-0 left-0 w-full h-screen z-[-1]"></div>
+      <div className="min-h-[1000vh] pt-[73px]" ref={bodyContainer}>
         <NavBar />
         <About refElement={aboutRef} />
         <OurStory refElement={storyRef} />
         <OurMission refElement={missionRef} />
         <OurUPS refElement={upsRef} />
         <OurPartners refElement={partnersRef} />
-        {/* <SplashScreen /> */}
-        {/* <Login /> */}
-        {/* <Register /> */}
-        {/* <StudentWelcomePortal /> */}
-        {/* <StudentVerifyPortal /> */}
         <ProgressBar imageElement={imageRef} />
+        <Preloader />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ const OurPartners = ({ refElement }) => {
   return (
     <div
       ref={refElement}
-      className="h-[calc(100vh-72px)] flex items-center justify-center w-full opacity-0 fixed top-0 left-0 pt-[70px] md:pt-0"
+      className="h-[calc(100vh-72px)] flex items-center justify-center w-full xl:mt-[3%] opacity-0 fixed top-0 left-0 pt-[70px] md:pt-0"
     >
       <div className="container mx-auto px-3 2xxl:max-w-[1556px]">
         <div className="flex items-center justify-between flex-col lg:flex-row">
@@ -19,37 +19,37 @@ const OurPartners = ({ refElement }) => {
             Meet our trusted partners on the journey to success!
           </p>
         </div>
-        <div className="flex items-center justify-center mt-[74px] gap-3 lg:gap-6 2xl:gap-[36px] flex-wrap">
+        <div className="flex items-center justify-center mt-[20px] lg:mt-[40px] xl:mt-[60px] 2xl:mt-[74px] gap-3 lg:gap-6 2xl:gap-[36px] flex-wrap">
           <Image
-            className="w-[20%] 2xl:w-[17%]"
+            className="w-[30%] md:w-[18%] lg:w-[18%] xl:w-[18.4%] 2xl:w-[17%]"
             src={"/assets/images/person1.png"}
             alt="our-story"
             width={873}
             height={654}
           />
           <Image
-            className="w-[20%] 2xl:w-[17%]"
+            className="w-[30%] md:w-[18%] lg:w-[18%] xl:w-[18.4%] 2xl:w-[17%]"
             src={"/assets/images/girl1.png"}
             alt="our-story"
             width={873}
             height={654}
           />
           <Image
-            className="w-[20%] 2xl:w-[17%]"
+            className="w-[30%] md:w-[18%] lg:w-[18%] xl:w-[18.4%] 2xl:w-[17%]"
             src={"/assets/images/girl2.png"}
             alt="our-story"
             width={873}
             height={654}
           />
           <Image
-            className="w-[20%] 2xl:w-[17%]"
+            className="w-[30%] md:w-[18%] lg:w-[18%] xl:w-[18.4%] 2xl:w-[17%]"
             src={"/assets/images/girl1.png"}
             alt="our-story"
             width={873}
             height={654}
           />
           <Image
-            className="w-[20%] 2xl:w-[17%]"
+            className="w-[30%] md:w-[18%] lg:w-[18%] xl:w-[18.4%] 2xl:w-[17%]"
             src={"/assets/images/person1.png"}
             alt="our-story"
             width={873}

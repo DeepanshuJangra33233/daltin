@@ -5,7 +5,7 @@ const OurMission = ({ refElement }) => {
   return (
     <div
       ref={refElement}
-      className="h-[calc(100vh-72px)] flex items-center justify-center 2xl:mt-[1.7%] pt-[70px] md:pt-0 w-full fixed top-0 left-0 opacity-0"
+      className="h-[calc(100vh-72px)] flex items-center justify-center xl:mt-[3%] 2xl:mt-[1.8%] pt-[70px] md:pt-0 w-full fixed top-0 left-0 opacity-0"
     >
       <div className="flex flex-col-reverse gap-3 sm:gap-5 md:gap-8 lg:gap-11 xl:gap-[52px] lg:flex-row items-center container mx-auto px-3 2xxl:max-w-[1556px]">
         <div className="w-full lg:w-1/2 2xl:w-[40%]">

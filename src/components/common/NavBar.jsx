@@ -67,12 +67,12 @@ const NavBar = () => {
           <span className="cursor-pointer">
             <Search />
           </span>
-          <div className="hidden lg:block">
+          <Link href={"/get-started"} className="hidden lg:block">
             <GradientButton
               text={"Talk To experts"}
               className={"!rounded-[12px] !py-[12px] !px-[36.5px] !text-[17px]"}
             />
-          </div>
+          </Link>
           <div
             className="flex lg:hidden items-center gap-1 flex-col cursor-pointer relative z-20"
             onClick={navBarToggleHandler}
@@ -98,12 +98,16 @@ const NavBar = () => {
             {item.title}
           </Link>
         ))}
-        <div className="max-w-[300px]" onClick={closeNavBarHandler}>
+        <Link
+          href={"/register"}
+          className="max-w-[300px]"
+          onClick={closeNavBarHandler}
+        >
           <GradientButton
             text={"Talk To experts"}
             className={"!rounded-[12px] !py-[12px] !px-[36.5px] !text-[17px]"}
           />
-        </div>
+        </Link>
       </div>
     </div>
   );

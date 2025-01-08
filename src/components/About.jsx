@@ -5,7 +5,7 @@ const About = ({ refElement }) => {
   return (
     <div
       // className=" w-full fixed top-0 left-0"
-      className=" h-[calc(100vh-72px)] flex items-center justify-center w-full fixed top-0 left-0 pt-[70px] md:pt-0"
+      className=" h-[calc(100vh-72px)] flex items-center justify-center xl:mt-[2.4%] 2xl:mt-[3%] w-full fixed top-0 left-0 pt-[70px] md:pt-0"
       ref={refElement}
     >
       <div className="flex flex-col-reverse lg:flex-row items-center flex-wrap container mx-auto px-3 2xxl:max-w-[1556px]">
