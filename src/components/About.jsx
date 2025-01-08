@@ -4,7 +4,8 @@ import React from "react";
 const About = ({ refElement }) => {
   return (
     <div
-      className="relative mt-[17%] lg:mt-[35%] xl:mt-[25%] 2xl:mt-[15%]"
+      // className=" w-full fixed top-0 left-0"
+      className=" h-[calc(100vh-72px)] flex items-center justify-center w-full fixed top-0 left-0 pt-[70px] md:pt-0"
       ref={refElement}
     >
       <div className="flex flex-col-reverse lg:flex-row items-center flex-wrap container mx-auto px-3 2xxl:max-w-[1556px]">
@@ -24,7 +25,7 @@ const About = ({ refElement }) => {
           </p>
         </div>
         <div className="lg:w-1/2">
-          <div className="lg:absolute right-0 w-full lg:w-[55%] -top-[15%]">
+          <div className="lg:absolute right-0 w-full lg:w-[55%] top-[17%]">
             <Image
               className="w-full"
               src={"/assets/images/about_the_company.png"}

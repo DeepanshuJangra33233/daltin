@@ -41,7 +41,7 @@ const NavBar = () => {
     document.body.classList.remove("!overflow-hidden");
   };
   return (
-    <div className="bg-white navbar_shadow py-2 relative">
+    <div className="bg-white navbar_shadow py-2 w-full fixed top-0 left-0 z-20">
       <span className="absolute top-full left-1/2 -translate-x-1/2 text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold py-[10px] px-[20px] min-w-[211px] sm:px-[35px] xl:px-[43px] ff_poppins ai_label">
         Explore Ai Course Finder
       </span>

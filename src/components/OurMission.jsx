@@ -1,9 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-const OurMission = ({  refElement}) => {
+const OurMission = ({ refElement }) => {
   return (
-    <div   ref={refElement} className="h-[calc(100vh-72px)] flex items-center justify-center">
+    <div
+      ref={refElement}
+      className="h-[calc(100vh-72px)] flex items-center justify-center 2xl:mt-[1.7%] pt-[70px] md:pt-0 w-full fixed top-0 left-0 opacity-0"
+    >
       <div className="flex flex-col-reverse gap-3 sm:gap-5 md:gap-8 lg:gap-11 xl:gap-[52px] lg:flex-row items-center container mx-auto px-3 2xxl:max-w-[1556px]">
         <div className="w-full lg:w-1/2 2xl:w-[40%]">
           <h2 className="font-semibold mt-5 lg:mt-0 text-3xl sm:text-4xl text-center lg:text-start xl:text-5xl 2xl:text-6xl text-black ff_raleway">

@@ -34,15 +34,6 @@ export default function Home() {
     const storySection = storyRef.current;
     const upsSection = upsRef.current;
     const partnersSection = partnersRef.current;
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: container,
-        start: "15% bottom",
-        end: "bottom 80%",
-        scrub: 3,
-      },
-    });
-
     // TIMELINE SCROLL ANIMATION TRIGGER
     gsap.to(imageElement, {
       x: "-1000px",
@@ -52,71 +43,12 @@ export default function Home() {
         trigger: container,
         start: "top bottom",
         end: "bottom 80%",
-        scrub: 1,
+        scrub: true,
+        markers: true,
       },
     });
 
     // ALL SECTIONS FACE ANIMATION
-    tl.to(aboutSection, {
-      opacity: 0,
-      duration: 2,
-    })
-      .to(
-        storySection,
-        {
-          opacity: 1,
-          duration: 2,
-        },
-        "-=1"
-      )
-      .to(
-        storySection,
-        {
-          opacity: 0,
-          duration: 2,
-        },
-        "-=1"
-      )
-      .to(
-        missionSection,
-        {
-          opacity: 1,
-          duration: 2,
-        },
-        "-=1"
-      )
-      .to(
-        missionSection,
-        {
-          opacity: 0,
-          duration: 2,
-        },
-        "-=1"
-      )
-      .to(
-        upsSection,
-        {
-          opacity: 1,
-          duration: 2,
-        },
-        "-=1"
-      )
-      .to(
-        upsSection,
-        {
-          opacity: 0,
-          duration: 2,
-        },
-        "-=1"
-      )
-      .to(
-        partnersSection,
-        {
-          opacity: 1,
-          duration: 2,
-        },
-        "-=1"
-      );
 
     return () => {
       ScrollTrigger.getAll().forEach((instance) => instance.kill());
@@ -125,7 +57,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <div
-        className="bg-[url('/assets/images/about_page_bg.webp')] bg-cover bg-center min-h-[1000vh] pt-[73px]"
+        className="bg-[url('/assets/images/about_page_bg.webp')] bg-cover bg-center min-h-screen"
         ref={bodyContainer}
       >
         <NavBar />

@@ -5,7 +5,7 @@ const OurPartners = ({ refElement }) => {
   return (
     <div
       ref={refElement}
-      className="h-[calc(100vh-72px)] flex items-center  justify-center"
+      className="h-[calc(100vh-72px)] flex items-center justify-center w-full opacity-0 fixed top-0 left-0 pt-[70px] md:pt-0"
     >
       <div className="container mx-auto px-3 2xxl:max-w-[1556px]">
         <div className="flex items-center justify-between flex-col lg:flex-row">
