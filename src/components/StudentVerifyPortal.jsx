@@ -7,9 +7,10 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 import GradientButton from "./common/GradientButton";
+import Link from "next/link";
 const StudentVerifyPortal = () => {
   return (
-    <div className=" py-5 bg-[url('/assets/images/student_portal_verify.webp')] flex items-center justify-center bg-cover bg-center min-h-screen w-full flex-col px-3">
+    <div className=" py-5 relative bg-[url('/assets/images/student_portal_verify.webp')] flex items-center justify-center bg-cover bg-center min-h-screen w-full flex-col px-3">
       <h2 className="lg:mb-3 xl:mb-[28px] text-2xl md:text-3xl 2xl:text-4xl 2xxl:text-[48px] font-bold text-[#3777FF] text-center ff_raleway lg:leading-[55px] xl:leading-[70px] 2xl:leading-[65.74px] max-w-[535px] mx-auto">
         Verify Your Code
       </h2>
@@ -31,6 +32,11 @@ const StudentVerifyPortal = () => {
       </div>
       <div className="max-w-[549px] mx-auto w-full">
         <GradientButton text={"Verify Now"} />
+      </div>
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2">
+        <Link href={"/"} className="text-base xl:text-lg underline">
+          Contact Support
+        </Link>
       </div>
     </div>
   );
